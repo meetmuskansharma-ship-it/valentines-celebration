@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ffe6f0, #fff);
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #ff4d88;
+  color: white;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #ff1a66;
+}
+
+.image {
+  width: 220px;
+  margin: 20px;
+}
+
+.photo {
+  width: 180px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+h2 {
+  color: #cc3366;
+}
+
+/* HEART CONFETTI */
+.heart {
+  position: fixed;
+  top: -20px;
+  font-size: 24px;
+  color: #ff4d88;
+  animation: fall 4s linear forwards;
+  z-index: 999;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
